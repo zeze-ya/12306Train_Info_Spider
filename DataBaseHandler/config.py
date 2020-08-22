@@ -1,0 +1,40 @@
+# Redis相关配置信息
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+REDIS_TASK_QUEUE_KEY = 'TaskQueue'
+REDIS_PROXY_POOL_KEY = 'ProxyPool'
+REDIS_FAIL_URL_QUEUE_KEY = 'FailUrl'
+REDIS_HISTORY_KEY = 'History'
+REDIS_TEMP_TASK_KEY = 'TempTask'
+
+# MongoDB数据库配置信息
+MONGO_URL = 'localhost'
+MONGO_PORT = 27017
+MONGO_DB = '12306'
+MONGO_TABLE_JW = 'jinwei'
+MONGO_TABLE_STATION = 'station'
+
+# MySQL数据库配置信息
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = '123456'
+MYSQL_PORT = 3306
+MYSQL_DATABASE = '12306'
+MYSQL_ROUTE_TABLE = 'route'
+MYSQL_TRAIN_TABLE = 'train'
+
+# 每次从队列中取出的url数量
+URL_BATCH = 20
+
+# 代理池最大的容量
+PROXY_NUMBER_MAX = 5000
+# 代理池最小的容量
+PROXY_NUMBER_MIN = 0
+
+# 定义代理池分数
+PROXY_SCORE_INIT = 10
+PROXY_SCORE_MIN = 0
+PROXY_SCORE_MAX = 100
+PROXY_SCORE_DELETE = 99
+
